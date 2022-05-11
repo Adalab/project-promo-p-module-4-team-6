@@ -1,0 +1,111 @@
+// STUFFED FIELDSET
+
+.stuffed-fieldset {
+  border: none;
+}
+
+// STUFFED DIV
+
+.stuffed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+
+  &__text-stuffed {
+    font-family: $open;
+    font-weight: $semi-bold;
+    font-size: 1.125rem;
+    color: $gun-metal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__stuffed-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: left;
+  }
+}
+
+// STUFFED ICONS
+
+.keyboard {
+  font-size: 1.125rem;
+  color: $dull-orange;
+  margin-right: 20px;
+}
+
+// CUTTING LINE
+
+.cutting-line2 {
+  width: 87vw;
+  border: solid 1px #d8d8d8;
+  border-bottom: 2px;
+  margin-top: 15px;
+  align-self: center;
+  @media all and (min-width: 768px) {
+    width: 100%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+// STUFFED FORM
+
+.stuffed-titles {
+  font-family: $open;
+  color: $dark-green-blue;
+  line-height: 20px;
+  padding-bottom: 7px;
+
+  &__stuffed-texts {
+    font-family: $open;
+    font-size: 14px;
+    color: $grey-placeholder;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 3px 0 7px 9px;
+    border: 1.5px solid $hospital-green;
+  }
+
+  &__stuffed-texts:focus {
+    color: $dark-green-blue;
+  }
+}
+
+// STUFFED ADD IMAGE
+
+.false-stuffed {
+  display: flex;
+  gap: 20px;
+
+  &__false-button {
+    font-family: $open;
+    font-size: 14px;
+    line-height: 20px;
+    color: $white-two;
+    background-color: $dull-orange;
+    width: 140px;
+    text-align: center;
+    padding: 3px 0 7px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+  }
+
+  &__false-square {
+    width: 30px;
+    height: 30px;
+    background-color: $white-two;
+    border: 1.5px solid $hospital-green;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

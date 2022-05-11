@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--FONT AWESOME-->
+    <script
+      src="https://kit.fontawesome.com/80215896bb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Awesome User Profile Cards</title>
+  </head>
+  <body>
+    <header>
+      <img class="logohead"
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Logo de la aplicación"
+      />
+    </header>
+
+    <main class="align-design">
+      <section class="preview-section">
+        <div class="preview-section__aliner-div">
+          <button class="reset-button js-reset">
+            <i class="fa-regular fa-trash-can reset-button__trash"></i>
+            <span class="reset-button__text">Reset</span>
+          </button>
+          <article class="preview-card js_preview">
+            <div class="preview-card__div rectangle">
+              <h3 class="preview-card__div--name name js-name js_reset-title">
+                Nombre Apellido
+              </h3>
+              <p
+                class="preview-card__div--profession profession js-profession js_reset-subtitle"
+              >
+                Front-end developer
+              </p>
+            </div>
+            <div class="preview-card__image js__profile-image"></div>
+            <nav>
+              <ul class="card-list">
+                <li class="card-list__item border">
+                  <a
+                    target="blank"
+                    href=""
+                    class="card-list__item--link icon-palette js-phone js_reset-telf"
+                    title="Teléfono"
+                    ><i class="fa-solid fa-mobile-screen-button"></i
+                  ></a>
+                </li>
+                <li class="card-list__item border">
+                  <a
+                    target="blank"
+                    href=""
+                    class="card-list__item--link icon-palette js-email js_reset-send"
+                    title="Correo electrónico"
+                    ><i class="fa-regular fa-envelope"></i
+                  ></a>
+                </li>
+                <li class="card-list__item border">
+                  <a
+                    target="blank"
+                    href=""
+                    class="card-list__item--link icon-palette js-linkedin js_reset-lknd"
+                    title="Perfil de Linkedin"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="card-list__item border">
+                  <a
+                    target="blank"
+                    href=""
+                    class="card-list__item--link icon-palette js-git js_reset-github"
+                    title="Perfil de GitHub"
+                    ><i class="fa-brands fa-github-alt"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </section>
+
+      <form class="form">
+        <!--DESIGN-->
+        <fieldset class="design-fieldset">
+          <div class="design js-design-container">
+            <i class="fa-regular fa-object-ungroup screens"></i>
+            <p class="design__text-design">Diseña</p>
+            <i class="fa-solid fa-angle-up collapsible js-arrow1"></i>
+          </div>
+          <!--COLORS-->
+          <!--PALLETE ONE-->
+          <section class="design-fieldset__design-section js-design js-reset-form">
+            <div class="colors__colors-box">
+              <label for="palette" class="colors">Colores</label>
+              <input
+                class="colors__colors-input js_radio1 js_radio"
+                type="radio"
+                name="palette"
+                id="palette1"
+                value="palette1"
+                checked="selected"
+              />
+              <span class="spectrum-blue1"></span>
+              <span class="spectrum-blue2"></span>
+              <span class="spectrum-blue3"></span>
+            </div>
+            <!--PALETTE TWO-->
+            <div class="colors__colors-box">
+              <input
+                class="colors__colors-input js_radio2 js_radio"
+                type="radio"
+                name="palette"
+                id="palette2"
+                value="palette2"
+              />
+              <span class="spectrum-warm1"></span>
+              <span class="spectrum-warm2"></span>
+              <span class="spectrum-warm3"></span>
+            </div>
+            <!--PALETTE THREE-->
+            <div class="colors__colors-box">
+              <input
+                class="colors__colors-input js_radio3 js_radio"
+                type="radio"
+                name="palette"
+                id="palette3"
+                value="palette3"
+              />
+              <span class="spectrum-mix1"></span>
+              <span class="spectrum-mix2"></span>
+              <span class="spectrum-mix3"></span>
+            </div>
+            <span class="cutting-line1"></span>
+          </section>
+        </fieldset>
+
+        <!--STUFFED-->
+        <fieldset class="stuffed-fieldset">
+          <div class="stuffed js-stuffed-container">
+            <i class="fa-regular fa-keyboard keyboard"></i>
+            <p class="stuffed__text-stuffed">Rellena</p>
+            <i class="fa-solid fa-angle-up collapsible js-arrow2"></i>
+          </div>
+          <!--NAME-->
+          <div
+            class="stuffed__stuffed-form hidden js-stuffed js-stuffed-form js-reset-form"
+          >
+            <label class="stuffed-titles" for="name">Nombre completo</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-forname js_reset-name"
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ej: Pepita Pérez"
+              required
+            />
+            <!--PROFESSION-->
+            <label class="stuffed-titles" for="profession">Puesto</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-forjob js_reset-job"
+              id="profession"
+              type="text"
+              name="profession"
+              placeholder="Ej: Front-end developer"
+              required
+            />
+            <!--ADD IMAGE-->
+            <label class="stuffed-titles" for="image">Imagen de perfil</label>
+            <div class="false-stuffed">
+              <label class="false-stuffed__false-button js__profile-trigger" for="image"
+                >Añadir imagen</label
+              >
+              <input
+                class="hidden js__profile-upload-btn js-forimage"
+                type="file"
+                id="image"
+                name="image"
+              />
+              <div class="false-stuffed__false-square js__profile-preview"></div>
+            </div>
+            <!--EMAIL-->
+            <label class="stuffed-titles" for="email">Email</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-formail js_reset-mail"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ej: pepita.perez@gmail.com"
+              required
+            />
+            <!--PHONE-->
+            <label class="stuffed-titles" for="telef">Teléfono</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-forphone js_reset-phone"
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="Ej: 000-000-000"
+              required
+            />
+            <!--SOCIAL MEDIA-->
+            <label class="stuffed-titles" for="Linkedin">Linkedin</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-forlkdn js_reset-linkedin"
+              type="text"
+              name="Linkedin"
+              id="Linkedin"
+              placeholder="Ej: PepitaPerez"
+            />
+            <label class="stuffed-titles" for="GitHub">GitHub</label>
+            <input
+              class="stuffed-titles__stuffed-texts js-forgit js_reset-git"
+              type="text"
+              name="GitHub"
+              id="GitHub"
+              placeholder="Ej: PepiPerez"
+            />
+            <span class="cutting-line2"></span>
+          </div>
+        </fieldset>
+
+        <!--SHARE AND CARD-->
+        <fieldset class="design-share">
+          <div class="share-legend js-share-container">
+            <i class="fa-solid fa-square-share-nodes share-legend__icon"></i>
+            <p class="share-legend__text">Comparte</p>
+            <i class="fa-solid fa-angle-up share-legend__arrow js-arrow3"></i>
+          </div>
+          <section class="section-share-1 hidden js-share">
+            <button class="card-button js-button-share">
+              <i class="fa-solid fa-address-card card-button__icon"></i>
+              <span class="card-button__text">Crear tarjeta</span>
+            </button>
+            <span class="section-share__line"></span>
+          </section>
+          <section class="share-newcard card-hidden js-section-link">
+            <h3 class="share-newcard__text js-false">La tarjeta ha sido creada:</h3>
+            <a target="blank" class="share-newcard__link js-true" href=""></a>
+            <button class="share-newcard__button js-btn-twitter">
+              <a
+                target="blank"
+                class="js-link-twitter"
+                href="https://twitter.com/intent/tweet?text=Aquí%20tienes%20las%20tarjetas%20del%20equipo%20cinco%20"
+              >
+                <i class="fa-brands fa-twitter"></i><span>Compartir en twitter</span></a
+              >
+            </button>
+            <span class="section-share__line"></span>
+          </section>
+        </fieldset>
+
+      </form>
+
+    </main>
+    <footer>
+      <div class="footer">
+        <small>Awesome profile-cards @2022</small>
+        <img
+          class="footer__logofoot"
+          src="./assets/images/logo-adalab.png"
+          alt="Logo Adalab"
+        />
+      </div>
+    </footer>
+
+    <!--js-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+  </body>
+</html>

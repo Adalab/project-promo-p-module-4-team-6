@@ -1,0 +1,150 @@
+// DESIGN FIELDSET
+
+.design-fieldset {
+  border: none;
+
+  &__design-section {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+}
+
+// DESIGN DIV
+
+.design {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+
+  &__text-design {
+    font-family: $open;
+    font-weight: $semi-bold;
+    font-size: 1.125rem;
+    color: $gun-metal;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+// DESIGN ICONS
+
+.screens {
+  font-size: 1.125rem;
+  color: $dull-orange;
+  margin-right: 20px;
+}
+
+.collapsible {
+  font-size: 1.125rem;
+  color: $gun-metal;
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+// CUTTING LINE
+
+.cutting-line1 {
+  width: 87vw;
+  border: solid 1px #d8d8d8;
+  border-bottom: 2px;
+  margin-top: 15px;
+  align-self: center;
+  @media all and (min-width: 768px) {
+    width: 90%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 90%;
+  }
+}
+
+// COLORS LABEL/INPUT + DIV
+
+.colors {
+  font-family: $open;
+  font-weight: $regular;
+  font-size: 0.875rem;
+  color: $gun-metal;
+  text-transform: uppercase;
+  padding-left: 39px;
+  flex-grow: 1;
+  text-align: left;
+
+  &__colors-box {
+    display: flex;
+    justify-content: flex-end;
+    // padding-right: 120px;
+  }
+
+  &__colors-input {
+    width: 17px;
+    height: 17px;
+    margin: 5px 10px 28px;
+    cursor: pointer;
+  }
+}
+
+// SPAN BLUE
+
+.spectrum-blue1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dark-green-blue;
+}
+
+.spectrum-blue2 {
+  width: 30px;
+  height: 25px;
+  background-color: $dirty-blue;
+}
+
+.spectrum-blue3 {
+  width: 30px;
+  height: 25px;
+  background-color: $hospital-green;
+  margin-right: 20px;
+}
+
+// SPAN WARM
+
+.spectrum-warm1 {
+  width: 30px;
+  height: 25px;
+  background-color: $dried-blood;
+}
+
+.spectrum-warm2 {
+  width: 30px;
+  height: 25px;
+  background-color: $rusty-red;
+}
+
+.spectrum-warm3 {
+  width: 30px;
+  height: 25px;
+  background-color: $tomato;
+  margin-right: 20px;
+}
+
+// SPAN MIX
+
+.spectrum-mix1 {
+  width: 30px;
+  height: 25px;
+  background-color: $slate;
+}
+.spectrum-mix2 {
+  width: 30px;
+  height: 25px;
+  background-color: $faded-orange;
+}
+
+.spectrum-mix3 {
+  width: 30px;
+  height: 25px;
+  background-color: $light-grey-blue;
+  margin-right: 20px;
+}

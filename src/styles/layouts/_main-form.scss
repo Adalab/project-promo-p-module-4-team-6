@@ -1,0 +1,16 @@
+// FORM
+@import "../components/form-design";
+@import "../components/form-stuffed";
+@import "../components/form-share";
+
+.form {
+  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+
+  @media all and (min-width: 768px) {
+    width: 50%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 40%;
+  }
+}
+

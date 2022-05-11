@@ -1,0 +1,27 @@
+@import 'core/reset';
+@import 'core/variables';
+@import 'layouts/header';
+@import 'layouts/main-preview';
+@import 'layouts/main-form';
+@import 'layouts/footer';
+@import 'layouts/main-landing';
+
+.hidden {
+  display: none;
+}
+.collapsible {
+  font-size: 1.125rem;
+  color: $gun-metal;
+  width: 10px;
+  transform: rotate(180deg);
+}
+
+@media all and (min-width: 768px) {
+  .align-design {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+  }
+}

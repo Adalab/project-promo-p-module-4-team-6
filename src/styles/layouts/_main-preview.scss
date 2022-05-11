@@ -1,0 +1,178 @@
+//BACKGROUND PREVIEW SECTION
+
+.preview-section {
+  padding: 38px 0 40px 0;
+  background-image: linear-gradient($silver, $pale-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__aliner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media all and (min-width: 768px) {
+    width: 50%;
+    border-radius: 6px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 60%;
+  }
+}
+
+///BUTTON PREVIEW SECTION
+
+.reset-button {
+  width: 75px;
+  height: 30px;
+  border-radius: 15px;
+  border: solid 1px $white-two;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: $open;
+  font-weight: $regular;
+  font-size: 0.75rem;
+  color: $gun-metal;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__trash {
+    width: 11px;
+    height: 20px;
+    line-height: 1.67;
+  }
+}
+
+//PROFILE CARD AT PREVIEW SECTION
+
+.preview-card {
+  width: 240px;
+  height: 329px;
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: $white-two;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0 1px 10px 0 $black-02, 0 1px 3px 0 $black-035;
+
+  //DIV DECORATION NAME + PROFESSION
+
+  &__div {
+    margin: 23px 0 10px 0;
+    border-left: solid 5px;
+    border-color: $dirty-blue;
+    padding-left: 15px;
+
+    &--name {
+      font-family: $montse;
+      font-weight: $bold;
+      font-size: 1.125rem;
+      color: $dark-green-blue;
+    }
+    &--profession {
+      font-family: $montse;
+      font-weight: $regular;
+      font-size: 1rem;
+      color: $gun-metal;
+    }
+  }
+
+  //IMAGE OF PROFILE CARD
+
+  &__image {
+    width: 240px;
+    height: 200px;
+    background-image: url("../../images/profile-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+//"BUTTON-ICONS" AT PROFILE CARD
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 5px 57px 7px 15px;
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 16px;
+    border-color: $hospital-green;
+
+    &--link {
+      text-decoration: none;
+      color: $dark-green-blue;
+    }
+  }
+}
+
+.palette1 {
+  .rectangle {
+    border-color: $dirty-blue;
+  }
+  .name {
+    color: $dark-green-blue;
+  }
+  .profession {
+    color: $dark-green-blue;
+  }
+  .border {
+    border-color: $hospital-green;
+  }
+  .icon-palette {
+    color: $dark-green-blue;
+  }
+}
+
+.palette2 {
+  .rectangle {
+    border-color: $rusty-red;
+  }
+  .name {
+    color: $dried-blood;
+  }
+  .profession {
+    color: $dried-blood;
+  }
+  .border {
+    border-color: $tomato;
+  }
+  .icon-palette {
+    color: $dried-blood;
+  }
+}
+
+.palette3 {
+  .rectangle {
+    border-color: $faded-orange;
+  }
+  .name {
+    color: $slate;
+  }
+  .profession {
+    color: $slate;
+  }
+  .border {
+    border-color: $light-grey-blue;
+  }
+  .icon-palette {
+    color: $slate;
+  }
+}
