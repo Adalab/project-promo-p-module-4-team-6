@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="./main.css" />
+<section class="preview-section">
+  <div class="preview-section__aliner-div">
+    <button class="reset-button js-reset">
+      <i class="fa-regular fa-trash-can reset-button__trash"></i
+      ><span class="reset-button__text">Reset</span>
+    </button>
+    <article class="preview-card js_preview">
+      <div class="preview-card__div rectangle">
+        <h3 class="preview-card__div--name name js-name js_reset-title">
+          <%= Nombre Apellido %>
+        </h3>
+        <p
+          class="preview-card__div--profession profession js-profession js_reset-subtitle"
+        >
+          <%= Front-end developer %>
+        </p>
+      </div>
+      <div class="preview-card__image js__profile-image">
+        <div class="false-stuffed">
+          <div
+            class="preview-card__image js__profile-image"
+            style="
+              background-image: url('/static/media/profile-image.9619a1d7fd1f904e2bb7.jpg');
+            "
+          ></div>
+        </div>
+      </div>
+      <nav>
+        <ul class="card-list">
+          <li class="card-list__item border">
+            <a
+              target="blank"
+              href="tel:"
+              class="card-list__item--link icon-palette js-phone js_reset-telf"
+              title="Teléfono"
+              ><i class="fa-solid fa-mobile-screen-button"></i
+            ></a>
+          </li>
+          <li class="card-list__item border">
+            <a
+              target="blank"
+              href="mailto:"
+              class="card-list__item--link icon-palette js-email js_reset-send"
+              title="Correo electrónico"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+          <li class="card-list__item border">
+            <a
+              target="blank"
+              href=""
+              class="card-list__item--link icon-palette js-linkedin js_reset-lknd"
+              title="Perfil de Linkedin"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="card-list__item border">
+            <a
+              target="blank"
+              href=""
+              class="card-list__item--link icon-palette js-git js_reset-github"
+              title="Perfil de GitHub"
+              ><i class="fa-brands fa-github-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </article>
+  </div>
+</section>
