@@ -8,12 +8,12 @@
     <article class="preview-card js_preview">
       <div class="preview-card__div rectangle">
         <h3 class="preview-card__div--name name js-name js_reset-title">
-          <%= Nombre Apellido %>
+          <%= name %>
         </h3>
         <p
           class="preview-card__div--profession profession js-profession js_reset-subtitle"
         >
-          <%= Front-end developer %>
+          <%= job %>
         </p>
       </div>
       <div class="preview-card__image js__profile-image">
@@ -21,7 +21,7 @@
           <div
             class="preview-card__image js__profile-image"
             style="
-              background-image: url('/static/media/profile-image.9619a1d7fd1f904e2bb7.jpg');
+              background-image: url('<%= photo %>');
             "
           ></div>
         </div>
@@ -31,7 +31,7 @@
           <li class="card-list__item border">
             <a
               target="blank"
-              href="tel:"
+              href="tel: <%= phone %>"
               class="card-list__item--link icon-palette js-phone js_reset-telf"
               title="Teléfono"
               ><i class="fa-solid fa-mobile-screen-button"></i
@@ -40,7 +40,7 @@
           <li class="card-list__item border">
             <a
               target="blank"
-              href="mailto:"
+              href="mailto: <%= email %>"
               class="card-list__item--link icon-palette js-email js_reset-send"
               title="Correo electrónico"
               ><i class="fa-regular fa-envelope"></i
@@ -49,7 +49,7 @@
           <li class="card-list__item border">
             <a
               target="blank"
-              href=""
+              href=" <%= linkedin %>"
               class="card-list__item--link icon-palette js-linkedin js_reset-lknd"
               title="Perfil de Linkedin"
               ><i class="fa-brands fa-linkedin-in"></i
@@ -58,7 +58,7 @@
           <li class="card-list__item border">
             <a
               target="blank"
-              href=""
+              href=" <%= github %>"
               class="card-list__item--link icon-palette js-git js_reset-github"
               title="Perfil de GitHub"
               ><i class="fa-brands fa-github-alt"></i
