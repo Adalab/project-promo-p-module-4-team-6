@@ -1,0 +1,142 @@
+.main-landing {
+  background-color: $white-four;
+  align-items: center;
+  text-align: center;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__logoMain {
+    margin-top: 95px;
+    height: 63px;
+    width: 250px;
+  }
+
+  &__title {
+    margin-top: 35.4px;
+    font-family: $merri;
+    color: $dull-orange;
+    font-size: 1.2rem;
+    font-weight: $black;
+  }
+
+  &__parraf {
+    margin: 0 28px;
+    font-family: $open;
+    color: $dark-green-blue;
+    font-size: 0.8rem;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 268px;
+
+  justify-content: space-between;
+  margin-top: 17.8px;
+  border: solid 1px $dull-orange;
+  margin-left: 25.6px;
+  margin-right: 26.4px;
+  padding: 15px 20px 9.8px;
+
+  &__icon {
+    color: $dull-orange;
+  }
+
+  &__items {
+    align-items: center;
+    text-align: center;
+    color: $gun-metal;
+  }
+
+  &__pMenu {
+    font-family: $open;
+    font-weight: $regular;
+    font-size: 0.8rem;
+  }
+}
+
+.button {
+  background-color: $dirty-blue;
+  border-radius: 21px;
+  width: 129px;
+  height: 42px;
+  color: $white-two;
+  margin: 38px 75px 35px 65px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  &__link {
+    color: $white-two;
+    font-family: $open;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+@media (min-width: 768px) {
+  .container1 {
+    &__logoMain {
+      margin-top: 255px;
+
+      height: 105px;
+      width: 419px;
+    }
+    &__title {
+      margin-top: 31px;
+      font-family: $merri;
+      color: $dull-orange;
+      font-size: 1.5rem;
+      font-weight: $black;
+    }
+    &__parraf {
+      font-family: $open;
+      color: $dark-green-blue;
+      font-size: 1rem;
+    }
+    .container2 {
+      width: 325px;
+      height: 86px;
+      font-size: 1, 75rem;
+      &__icon {
+        color: $dull-orange;
+        height: 29px;
+        width: 32px;
+      }
+
+      &__items {
+        align-items: center;
+        text-align: center;
+        color: $gun-metal;
+        font-size: 28px;
+        height: 29px;
+        width: 32px;
+      }
+
+      .button {
+        margin: 186px 145px 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .container2__icon {
+    font-size: 29px;
+  }
+}
+.align-landing {
+  width: 100vw;
+  height: 100vh;
+}

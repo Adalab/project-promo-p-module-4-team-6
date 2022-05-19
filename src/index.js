@@ -9,7 +9,8 @@ const server = express();
 //importar estilos:
 server.use(express.static(styles));
 // Configuramos el servidor server.use(cors());
-server.use(express.json());
+server.use(cors());
+server.use(express.json({ limit: "10mb" }));
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
 server.listen(serverPort, () => {
@@ -39,8 +40,8 @@ server.post("/card", (req, res) => {
     //creo la respuesta
     const responseSuccess = {
       success: true,
-      cardURL: "https://awesome-profile-cards.herokuapp.com/card",
-      // `https://awesome-profile-cards.herokuapp.com/card/${}`,
+      // cardURL: "https://awesome-profile-cards.herokuapp.com/card",
+      cardURL: `http://localhost:4000/card/${newCard.id}`,
     };
     //envio la respuesta
     res.json(responseSuccess);
@@ -49,8 +50,8 @@ server.post("/card", (req, res) => {
       success: false,
       error: "Faltan parámetros",
     };
+    res.json(responseError);
   }
-  res.json(responseError);
 });
 server.get("/card/:id", (req, res) => {
   const userCard = saveCards.find((card) => card.id === req.params.id);

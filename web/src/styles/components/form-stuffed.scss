@@ -1,0 +1,115 @@
+// STUFFED FIELDSET
+
+.stuffed-fieldset {
+  border: none;
+}
+
+// STUFFED DIV
+
+.stuffed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+
+  &__text-stuffed {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #54585a;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+  }
+
+  &__stuffed-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    text-align: left;
+  }
+}
+
+// STUFFED ICONS
+
+.keyboard {
+  font-size: 1.125rem;
+  color: #e17334;
+  margin-right: 20px;
+}
+
+// CUTTING LINE
+
+.cutting-line2 {
+  width: 87vw;
+  border: solid 1px #d8d8d8;
+  border-bottom: 2px;
+  margin-top: 15px;
+  align-self: center;
+  @media all and (min-width: 768px) {
+    width: 100%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+// STUFFED FORM
+
+.stuffed-titles {
+  font-family: "Open Sans", sans-serif;
+  color: #114e4e;
+  line-height: 20px;
+  padding-bottom: 7px;
+
+  &__stuffed-texts {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #c5c5c5;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 3px 0 7px 9px;
+    border: 1.5px solid #a2deaf;
+  }
+
+  &__stuffed-texts:focus {
+    color: #114e4e;
+  }
+}
+
+// STUFFED ADD IMAGE
+
+.false-stuffed {
+  display: flex;
+  gap: 20px;
+
+  &__false-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #e17334;
+    width: 140px;
+    text-align: center;
+    padding: 3px 0 7px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    cursor: pointer;
+  }
+
+  &__false-square {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1.5px solid #a2deaf;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.hiddenButton {
+  display: none;
+}
