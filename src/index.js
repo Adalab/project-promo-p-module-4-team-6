@@ -5,24 +5,36 @@ const { v4: uuidv4 } = require("uuid");
 const styles = "./src/main.css";
 //Importamos la base de datos:
 const Database = require("better-sqlite3");
-const db = Database("./src/db/cards", { verbose: console.log });
+const db = Database("./src/db/cards.db", { verbose: console.log });
 
 // Creamos el servidor
+
 const server = express();
+
 //importar estilos:
+
 server.use(express.static(styles));
+
 // Configuramos el servidor server.use(cors());
+
 server.use(cors());
 server.use(express.json({ limit: "10mb" }));
-// Arrancamos el servidor en el puerto 3000
+
+// Configurar el servidor para que trabaje con ejs:
+
+server.set("view engine", "ejs");
+
+// Arrancamos el servidor en el puerto 4000
+
 const serverPort = 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http://localhost:${serverPort}`);
 });
-// Configurar el servidor para que trabaje con ejs:
-server.set("view engine", "ejs");
+//Creamos una constante donde se guarde la tarjeta creada.
+
 const saveCards = [];
-// Escribimos los endpoints que queramos
+
+// Escribimos el endpoint para generar la url de la tarjeta
 
 server.post("/card", (req, res) => {
   if (
@@ -39,13 +51,30 @@ server.post("/card", (req, res) => {
       ...req.body,
       id: uuidv4(),
     };
-    saveCards.push(newCard);
-    //creo la respuesta
+    //saveCards.push(newCard);
+
+    //Insertar la tarjeta en la base de datos:
+
+    const query = db.prepare(
+      `INSERT INTO cards (palette,name,job,email,phone,linkedin,github,photo,uuid)VALUES (?,?,?,?,?,?,?,?,?)`
+    );
+    const card = query.run(
+      newCard.palette,
+      newCard.name,
+      newCard.job,
+      newCard.email,
+      newCard.phone,
+      newCard.linkedin,
+      newCard.github,
+      newCard.photo,
+      newCard.id
+    );
+    //Creamos la respuesta
     const responseSuccess = {
       success: true,
       cardURL: `http://localhost:4000/card/${newCard.id}`,
     };
-    //envio la respuesta
+    //Enviamos la respuesta
     res.json(responseSuccess);
   } else {
     const responseError = {
@@ -55,12 +84,18 @@ server.post("/card", (req, res) => {
     res.json(responseError);
   }
 });
+
+//endpoint de la tarjeta de la usuaria:
+
 server.get("/card/:id", (req, res) => {
-  const userCard = saveCards.find((card) => card.id === req.params.id);
+  // const userCard = saveCards.find((card) => card.id === req.params.id);
+  const query = db.prepare("SELECT * FROM cards WHERE uuid = ?");
+  const userCard = query.get(req.params.id);
   res.render("card", userCard);
 });
 
 //endpoints:
+/*
 server.post("/cards", (req, res) => {
   // preparamos y ejecutamos la query
   const query = db.prepare(
@@ -77,13 +112,16 @@ server.post("/cards", (req, res) => {
     req.body.params.photo,
     req.body.params.uuid
   );
+  // Creamos la respuesta:
 
-  res.json({
+  const responseSuccess = {
     success: true,
-    newCard: card,
-  });
+    newCardURL: `http://localhost:4000/card/${newCard.id}`,
+  };
+  //Se envía la respuesta:
+  res.json(responseSuccess);
 });
-
+*/
 //servidores estáticos de React
 const pathServerPublic = "./src/public-react";
 server.use(express.static(pathServerPublic));
