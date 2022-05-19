@@ -35,17 +35,6 @@ function Card(props) {
       : props.setArrowShare("");
   };
 
-  /*
-    if (triangleDesign === '') {
-          setTriangleShare('hidden') && setTriangleForm('hidden');
-        }*/
-
-  /*if (triangleForm === '') {
-          setTriangleShare('hidden') && setTriangleDesign('hidden');
-        }*/
-  /*if (triangleShare === '') {
-          setTriangleForm('hidden') && setTriangleDesign('hidden');}*/
-
   //manejadora botón crear
   const handleClickCreateCard = () => {
     props.dataApi(props.dataCard).then((info) => {
@@ -65,6 +54,7 @@ function Card(props) {
           handleReset={props.handleReset}
           avatar={props.avatar}
           updateAvatar={props.updateAvatar}
+          inputRadio1={props.inputRadio1}
         />
 
         <form className="form">

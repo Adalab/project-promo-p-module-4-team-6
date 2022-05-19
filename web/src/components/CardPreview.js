@@ -8,7 +8,7 @@ function CardPreview(props) {
           <i className="fa-regular fa-trash-can reset-button__trash"></i>
           <span className="reset-button__text">Reset</span>
         </button>
-        <article className="preview-card js_preview">
+        <article className={`"preview-card js_preview ${props.inputRadio1}"`}>
           <div className="preview-card__div rectangle">
             <h3 className="preview-card__div--name name js-name js_reset-title">
               {props.dataCard.name || "Nombre Apellido"}

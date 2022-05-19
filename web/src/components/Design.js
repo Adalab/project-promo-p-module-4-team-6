@@ -1,4 +1,7 @@
 function Design(props) {
+  const handleChangeInput = (ev) => {
+    props.handleInput(ev);
+  };
   return (
     <fieldset className="design-fieldset">
       <div className="design" onClick={props.handlerClickColapsibleDesign}>
@@ -21,8 +24,8 @@ function Design(props) {
             name="palette"
             id="1"
             value="1"
-            checked={props.dataCard.palette === '1'}
-            onChange={props.handleInput}
+            checked={props.dataCard.palette === "1"}
+            onChange={handleChangeInput}
           />
           <span className="spectrum-blue1"></span>
           <span className="spectrum-blue2"></span>
@@ -36,8 +39,8 @@ function Design(props) {
             name="palette"
             id="2"
             value="2"
-            checked={props.dataCard.palette === '2'}
-            onChange={props.handleInput}
+            checked={props.dataCard.palette === "2"}
+            onChange={handleChangeInput}
           />
           <span className="spectrum-warm1"></span>
           <span className="spectrum-warm2"></span>
@@ -51,8 +54,8 @@ function Design(props) {
             name="palette"
             id="3"
             value="3"
-            checked={props.dataCard.palette === '3'}
-            onChange={props.handleInput}
+            checked={props.dataCard.palette === "3"}
+            onChange={handleChangeInput}
           />
           <span className="spectrum-mix1"></span>
           <span className="spectrum-mix2"></span>

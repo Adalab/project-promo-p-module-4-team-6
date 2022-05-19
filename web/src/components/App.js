@@ -14,6 +14,9 @@ function App() {
   const [arrowDesign, setArrowDesign] = useState("");
   const [arrowForm, setArrowForm] = useState("");
   const [arrowShare, setArrowShare] = useState("");
+  const [inputRadio1, setInputRadio1] = useState("");
+  //const [inputRadio2, setInputRadio2] = useState("");
+  //const [inputRadio3, setInputRadio3] = useState("");
   const [dataCard, setDataCard] = useState({
     palette: "1",
     name: "",
@@ -63,6 +66,15 @@ function App() {
       ...dataCard,
       [inputChanged]: inputValue,
     });
+
+    if (dataCard.palette === 1) {
+      setInputRadio1("palette1");
+    } else if (dataCard.palette === 2) {
+      setInputRadio1("palette2");
+    } else if (dataCard.palette === 3) {
+      setInputRadio1("palette3");
+    }
+    return setInputRadio1;
   };
 
   //add image
@@ -93,6 +105,12 @@ function App() {
           path="/card"
           element={
             <Card
+              inputRadio1={inputRadio1}
+              // inputRadio2={inputRadio2}
+              //inputRadio3={inputRadio3}
+              setInputRadio1={setInputRadio1}
+              // setInputRadio2={setInputRadio2}
+              // setInputRadio3={setInputRadio3}
               triangleDesign={triangleDesign}
               setTriangleDesign={setTriangleDesign}
               triangleForm={triangleForm}
