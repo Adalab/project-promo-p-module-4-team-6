@@ -51,12 +51,6 @@ function App() {
       github: "",
       photo: setAvatar(""),
     });
-    //clear();
-    // Función que limpia todo el local storage
-    /*const clear = () => {
-          localStorage.clear();
-        };
-      };*/
   };
 
   const handleInput = (ev) => {
@@ -66,14 +60,16 @@ function App() {
       ...dataCard,
       [inputChanged]: inputValue,
     });
-
-    if (dataCard.palette === 1) {
+    console.log(dataCard);
+    /* if (inputValue === "1") {
       setInputRadio1("palette1");
-    } else if (dataCard.palette === 2) {
+    } else if (inputValue === "2") {
       setInputRadio1("palette2");
-    } else if (dataCard.palette === 3) {
+    } else if (inputValue === "3") {
       setInputRadio1("palette3");
-    }
+    }*/
+    const valuePalette = `palette${inputValue}`;
+    setInputRadio1(valuePalette);
     return setInputRadio1;
   };
 
