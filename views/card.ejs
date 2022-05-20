@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/016f8587a2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/main.css" />
     <title>Awesome Profile Cards</title>
     <!-- Tipografía -->
@@ -15,15 +19,11 @@
     />
 
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/016f8587a2.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <section class="preview-section">
+    <section class="preview-section <%=palette%>">
       <div class="preview-section__aliner-div">
-        <article class="preview-card js_preview <%=palette%>">
+        <article class="preview-card js_preview">
           <div class="preview-card__div rectangle">
             <h3 class="preview-card__div--name name js-name js_reset-title">
               <%= name %>
