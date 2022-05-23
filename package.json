@@ -22,7 +22,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "publish-react": "cd web && npm run build && cd .. && rm -rf ./src/public-react && mv ./web/build ./src/public-react",
-    "start": "react-scripts start",
+    "start": "node src/index.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
