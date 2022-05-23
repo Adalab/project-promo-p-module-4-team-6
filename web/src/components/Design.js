@@ -24,7 +24,7 @@ function Design(props) {
             name="palette"
             id="1"
             value="1"
-            checked={props.dataCard.palette === "1"}
+            checked={props.dataCard.palette === '1'}
             onChange={handleChangeInput}
           />
           <span className="spectrum-blue1"></span>
@@ -39,7 +39,7 @@ function Design(props) {
             name="palette"
             id="2"
             value="2"
-            checked={props.dataCard.palette === "2"}
+            checked={props.dataCard.palette === '2'}
             onChange={handleChangeInput}
           />
           <span className="spectrum-warm1"></span>
@@ -54,7 +54,7 @@ function Design(props) {
             name="palette"
             id="3"
             value="3"
-            checked={props.dataCard.palette === "3"}
+            checked={props.dataCard.palette === '3'}
             onChange={handleChangeInput}
           />
           <span className="spectrum-mix1"></span>
