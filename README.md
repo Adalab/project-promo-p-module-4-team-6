@@ -6,19 +6,19 @@ By: Full-Stack-Warriors
 
 ### Descripcion del proyecto
 
-En este proyecto habíamos realizado una aplicación, que creaba tarjetas de visita digitales las cuales adjuntaban los datos de una persona/trabajador@/alumn@, con el fin de compartir la información con segund@s o tercer@s interesados. Además tienen la capacidad de compatilas en twitter y dejar al alcance de más personas la clásica pero modernizada tarjeta de visita.
+En este proyecto habíamos realizado una aplicación, que creaba tarjetas de visita digitales las cuales adjuntaban los datos de una persona/trabajador@/alumn@, con el fin de compartir la información con segund@s o tercer@s interesados. Además tienen la capacidad de compartirlas en twitter y dejar al alcance de más personas la clásica pero modernizada tarjeta de visita.
 
 Esta vez, para este proyecto, hemos heredado el código de otro equipo, y hemos implementado React para hacer la experiencia interactiva lo más amena posible y de gran rendimiento.
 
-Seguimos teniendo la misma interfaz ;) pero hemos mejorado mucho el código al meter las cabezas en React.
+Hemos cambiado de mascota y el código ahora incorpora algo más de funcionalidades, al haber implementado algo de trabajo de back.
 
 ### Capturas de la aplicación
 
-![image](https://user-images.githubusercontent.com/94449849/166514800-4e44aad7-cb60-4e6b-a011-0878c7e11ba2.png)
+![image](https://user-images.githubusercontent.com/94449849/169858011-9a5750f4-6ccd-40ec-98b5-acd4411844a6.png)
 
 - Puedes ver el proyecto en: http://beta.adalab.es/project-promo-p-module-3-team-6/
 
-- puedes ver el repositorio en: https://github.com/Adalab/project-promo-p-module-3-team-6
+- Puedes ver el repositorio en: https://github.com/Adalab/project-promo-p-module-3-team-6
 
 ### Las herramientas y lenguajes usados para el proyecto han sido:
 
@@ -28,12 +28,15 @@ Seguimos teniendo la misma interfaz ;) pero hemos mejorado mucho el código al m
 - Java Script
 - CSS3
 - React
+- Node js
 - Scrum
 - Github / Github pages
 
 ### Recursos utilizados:
 
 - Clases Adalab
+- Postman
+- SQLite
 - Videos de Zoom Adalab
 - Stack Overflow
 - MDN
@@ -41,11 +44,11 @@ Seguimos teniendo la misma interfaz ;) pero hemos mejorado mucho el código al m
 
 ### Autores
 
-- Lorena: http://linkedin.com/in/lorena-guartazaca-b55a541b4
+- Lorena: https://twitter.com/Loreodos1?t=gqISTI9voTJux_2JMT28Jw&s=09
 - Noelia: https://www.linkedin.com/in/noeliaromerogarcia/
 - Ana: https://www.linkedin.com/in/ana-marcos-est%C3%A9vez-7ab986232/
 - Lucía: https://www.linkedin.com/in/luc%C3%ADa-acu%C3%B1a-ruadas-9b3888143/
 
 ### Menciones y agradecimientos :
 
-Hemos trabajado y sudado juntas para llevar esto a término, y aun que puede que no sea perfecto, estamos orgullosas y encantadas de habernos conocido, por que somos las ¡React Wariors!.
+Hemos trabajado y sudado juntas para llevar esto a término, y aun que puede que no sea perfecto, estamos orgullosas y encantadas de habernos conocido, por que somos las ¡Full-Stack-Wariors!.
