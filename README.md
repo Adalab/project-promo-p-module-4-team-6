@@ -1,12 +1,12 @@
 # AWESOME PROFILE-CARDS: EL PROYECTO HEREDADO
 
-By: The React Warriors
+By: Full-Stack-Warriors
 
 ![image](https://user-images.githubusercontent.com/94449849/166510282-7151eced-12a5-47fa-a29c-d121dcf0952e.png)
 
 ### Descripcion del proyecto
 
-En este proyecto habÍamos realizado una aplicación, que creaba tarjetas de visita digitales las cuales adjuntaban los datos de una persona/trabajador@/alumn@, con el fin de compartir la información con segund@s o tercer@s interesados. Además tienen la capacidad de compatilas en twitter y dejar al alcance de más personas la clásica pero modernizada tarjeta de visita.
+En este proyecto habíamos realizado una aplicación, que creaba tarjetas de visita digitales las cuales adjuntaban los datos de una persona/trabajador@/alumn@, con el fin de compartir la información con segund@s o tercer@s interesados. Además tienen la capacidad de compatilas en twitter y dejar al alcance de más personas la clásica pero modernizada tarjeta de visita.
 
 Esta vez, para este proyecto, hemos heredado el código de otro equipo, y hemos implementado React para hacer la experiencia interactiva lo más amena posible y de gran rendimiento.
 
