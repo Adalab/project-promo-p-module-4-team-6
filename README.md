@@ -16,7 +16,7 @@ Hemos cambiado de mascota y el código ahora incorpora algo más de funcionalida
 
 ![image](https://user-images.githubusercontent.com/94449849/169858011-9a5750f4-6ccd-40ec-98b5-acd4411844a6.png)
 
-- Puedes ver el proyecto en: http://beta.adalab.es/project-promo-p-module-3-team-6/
+- Puedes ver el proyecto en: https://project-module-4-team-6.herokuapp.com/
 
 - Puedes ver el repositorio en: https://github.com/Adalab/project-promo-p-module-3-team-6
 
