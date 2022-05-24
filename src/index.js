@@ -28,7 +28,9 @@ server.set('view engine', 'ejs');
 
 const serverPort = process.env.PORT || 4000;
 server.listen(serverPort, () => {
-  console.log(`Server listening at http://localhost:${serverPort}`);
+  console.log(
+    `Server listening at :https://project-module-4-team-6.herokuapp.com:${serverPort}`
+  );
 });
 //Creamos una constante donde se guarde la tarjeta creada.
 
@@ -72,7 +74,7 @@ server.post('/card', (req, res) => {
     //Creamos la respuesta
     const responseSuccess = {
       success: true,
-      cardURL: `http://localhost:4000/card/${newCard.id}`,
+      cardURL: `https://project-module-4-team-6.herokuapp.com/card/${newCard.id}`,
     };
     //Enviamos la respuesta
     res.json(responseSuccess);
